@@ -1,0 +1,4 @@
+for i in {01..06}
+  do
+    cwebp -q $1 $i.JPG -o $i.webp 
+done
