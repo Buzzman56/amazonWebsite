@@ -15,13 +15,27 @@
     </style>
   <body class="w3-teal">
 
-    <!-- Navbar -->
-    <div class="w3-top">
-      <ul class="w3-navbar w3-wide w3-card-2 w3-padding-8 w3-white">
-        <li class="w3-padding-4 w3-right"><a href="#home"><i class="material-icons">home</i></a></li>
-        <li class="w3-padding-4 w3-right"><a href="#about">About</a></li>
-      </ul>
+    <!-- Side Nav -->
+    <nav class="w3-sidenav w3-collapse w3-white" style="width:200px;right:0" id="mySidenav">
+      <a href="#" onclick="w3_close()" class="w3-closenav w3-hide-large">Close &times;</a>
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </nav>
+
+    <div class="w3-main" style="margin-right:200px">
+      <span class="w3-opennav w3-hide-large" onclick="w3_open()">&#9776;</span>
     </div>
+
+    <script>
+      function w3_open() {
+        document.getElementById("mySidenav").style.display = "block";
+      }
+      function w3_close() {
+        document.getElementById("mySidenav").style.display = "none";
+      }
+    </script>
+    <!-- End Navbar -->
 
     <!--Slide show images -->
     <div class="w3-center">
