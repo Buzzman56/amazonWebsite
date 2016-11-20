@@ -1,60 +1,66 @@
 <!DOCTYPE html>
 <html>
-  <title>DuVall Photo & Tech</title>
+  <title>DuVall Photo &amp; Tech</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="resources\css\main.css">
+  <link rel="stylesheet" href="resources/css/main.css">
+  <link rel="stylesheet" href="resources/css/w3-theme-grey.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
+  <script src="https://use.fontawesome.com/6e28a091b1.js"></script>
   <style>
     body,h1 {font-family: "Montserrat", sans-serif}
     img {margin-bottom: -7px}
     .w3-row-padding img {margin-bottom: 12px}
     .image {width: 100%}
-    </style>
-  <body class="w3-teal">
+  </style>
 
-    <!-- Side Nav -->
-    <nav class="w3-sidenav w3-collapse w3-white" style="width:200px;right:0" id="mySidenav">
-      <a href="#" onclick="w3_close()" class="w3-closenav w3-hide-large">Close &times;</a>
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </nav>
+  <body class="w3-theme-l3">
+    <div class="w3-row">
+      <!-- Side Nav -->
+      <div class="w3-container w3-col w3-theme-l4" style="width:50px">
+        <nav class="w3-sidenav w3-collapse" style="width:50px" id="mySidenav">
+          <a onclick="w3_close()" class="w3-closenav w3-hide-large">Close &times;</a>
+          <a class="w3-hover-theme fa fa-home fa-2x w3-center" href="index.html"></a>
+          <a class="w3-hover-theme fa fa-info fa-2x w3-center" href="about.html"></a>
+        </nav>
 
-    <div class="w3-main" style="margin-right:200px">
-      <span class="w3-opennav w3-hide-large" onclick="w3_open()">&#9776;</span>
-    </div>
+        <div class="w3-main" style="margin-right:50px">
+          <span class="w3-opennav w3-hide-large" onclick="w3_open()">&#9776;</span>
+        </div>
+      </div>
 
-    <script>
-      function w3_open() {
-        document.getElementById("mySidenav").style.display = "block";
-      }
-      function w3_close() {
-        document.getElementById("mySidenav").style.display = "none";
-      }
-    </script>
-    <!-- End Navbar -->
+      <script>
+        function w3_open() {
+          document.getElementById("mySidenav").style.display = "block";
+        }
+        function w3_close() {
+          document.getElementById("mySidenav").style.display = "none";
+        }
+      </script>
+      <!-- End Navbar -->
 
-    <!--Slide show images -->
-    <div class="w3-center">
-      <div class="w3-display-container w3-content">
-        <!-- Images -->
-        <img class="mySlides w3-round-large" src="images\fulls\01.webp" style="width:100%">
-        <img class="mySlides w3-round-large" src="images\fulls\02.webp" style="width:100%">
-        <img class="mySlides w3-round-large" src="images\fulls\03.webp" style="width:100%">
-        <img class="mySlides w3-round-large" src="images\fulls\04.webp" style="width:100%">
-        <img class="mySlides w3-round-large" src="images\fulls\05.webp" style="width:100%">
-        <img class="mySlides w3-round-large" src="images\fulls\06.webp" style="width:100%">
-        <!-- Buttons -->
-        <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
-        <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
-        <!-- Captions -->
+      <!--Slide show images -->
+      <div class="w3-container w3-rest w3-padding-32 w3-center w3-content w3-display-container">
+          <!-- Images -->
+          <img class="mySlides w3-round-small  w3-animate-left" src="images/fulls/01.webp" style="width:100%">
+          <img class="mySlides w3-round-small  w3-animate-left" src="images/fulls/02.webp" style="width:100%">
+          <img class="mySlides w3-round-small  w3-animate-left" src="images/fulls/03.webp" style="width:100%">
+          <img class="mySlides w3-round-small  w3-animate-left" src="images/fulls/04.webp" style="width:100%">
+          <img class="mySlides w3-round-small  w3-animate-left" src="images/fulls/05.webp" style="width:100%">
+          <img class="mySlides w3-round-small  w3-animate-left" src="images/fulls/06.webp" style="width:100%">
+          <!-- Buttons -->
+          <div class="w3-center w3-display-middle" style="width:100%">
+            <div class="fa fa-chevron-left fa-3x w3-left w3-text-white w3-margin-left" onclick="plusDivs(-1)"></div>
+            <div class="fa fa-chevron-right fa-3x w3-right w3-text-white w3-margin-right" onclick="plusDivs(1)"></div>
+          </div>
+          <!-- Captions -->
         <div class="w3-container-bottom">
           <p>All photos were taken by me, Stephen DuVall</p>
         </div>
       </div>
+
     </div>
 
     <!-- Google Analytics -->
