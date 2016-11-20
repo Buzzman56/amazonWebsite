@@ -24,6 +24,17 @@
           <a class="w3-hover-theme fa fa-home fa-2x w3-center-align w3-padding-0" href="index.html" style="text-align: center"></a>
           <a class="w3-hover-theme fa fa-info fa-2x w3-center-align w3-padding-0" href="about.html" style="text-align: center"></a>
         </nav>
+        <span class="w3-opennav w3-xlarge w3-hide-xlarge w3-padding" onclick="w3_open()">&#9776;</span>
+      <!-- Side nav toggle script -->
+      <script>
+        function w3_open() {
+          document.getElementById("mySidenav").style.display = "block";
+        }
+        function w3_close() {
+          document.getElementById("mySidenav").style.display = "none";
+        }
+      </script>
+
       <!-- End Navbar -->
 
       <!--Slide show images -->
