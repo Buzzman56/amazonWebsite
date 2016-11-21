@@ -1,95 +1,106 @@
 <!DOCTYPE html>
 <html>
-  <title>DuVall Photo &amp; Tech</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="resources/css/main.css">
-  <link rel="stylesheet" href="resources/css/w3-theme-grey.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="resources/css/font-awesome/css/font-awesome.css">
-  <link rel="shortcut icon" href="resources/favicon-camera-retro.ico" type="image/x-icon"/>
-
+  <head>
+    <title>DuVall Photo &amp; Tech</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="resources/css/main.css"><!-- W3 link -->
+    <link rel="stylesheet" href="resources/css/font-awesome/css/font-awesome.css"><!-- Font awesome -->
+    <link rel="shortcut icon" href="resources/favicon-camera-retro.ico" type="image/x-icon"/><!-- Camera icon -->
+  </head>
+  <!-- Style -->
   <style>
-    body,h1 {font-family: "Montserrat", sans-serif}
-    img {margin-bottom: -7px}
-    .w3-row-padding img {margin-bottom: 12px}
-    .image {width: 100%}
+    body, html {
+      height: 100%;
+    }
+    .parallax {
+      height: 100%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #par1{
+      background-image: url("images/101_MG_0576-maxblack.jpg");
+    }
+    #par2{
+      background-image: url("images/101_MG_6296.JPG");
+    }
+    #par3{
+      background-image: url("images/_MG_7630.jpg");
+    }
+    .card {
+      width: 100%;
+      max-width: 540px;
+      margin: auto;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
   </style>
 
-  <body class="w3-theme-l3">
-    <div class="w3-row">
-      <!-- Side nav -->
-        <nav class="w3-sidenav w3-theme-l5" style="width:50px;display:none" id="mySidenav">
-          <a class="w3-hover-theme fa fa-close fa-2x w3-center-align w3-padding-0" onclick="w3_close()" style="text-align: center"></a>
-          <a class="w3-hover-theme fa fa-home fa-2x w3-center-align w3-padding-0" href="index.html" style="text-align: center"></a>
-          <a class="w3-hover-theme fa fa-info fa-2x w3-center-align w3-padding-0" href="about.html" style="text-align: center"></a>
-        </nav>
-        <span class="w3-opennav w3-xlarge w3-hide-xlarge w3-padding" onclick="w3_open()">&#9776;</span>
-      <!-- Side nav toggle script -->
-      <script>
-        function w3_open() {
-          document.getElementById("mySidenav").style.display = "block";
-        }
-        function w3_close() {
-          document.getElementById("mySidenav").style.display = "none";
-        }
-      </script>
+  <!-- Body -->
+  <body>
 
-      <!-- End Navbar -->
+    <!-- First parallax section -->
+    <div class="parallax w3-padding-32 w3-center w3-display-container" id="par1">
 
-      <!--Slide show images -->
-      <div class="w3-rest w3-content w3-display-container" style="max-height:90%; max-width:90%">
-        <div class="w3-container w3-theme-l4 w3-padding-16 w3-card w3-margin-top">
-          <!-- Images -->
-          <img class="mySlides w3-round-small w3-animate-left" src="images/fulls/01.webp" style="width:100%">
-          <img class="mySlides w3-round-small w3-animate-left" src="images/fulls/02.webp" style="width:100%">
-          <img class="mySlides w3-round-small w3-animate-left" src="images/fulls/03.webp" style="width:100%">
-          <img class="mySlides w3-round-small w3-animate-left" src="images/fulls/04.webp" style="width:100%">
-          <img class="mySlides w3-round-small w3-animate-left" src="images/fulls/05.webp" style="width:100%">
-          <img class="mySlides w3-round-small w3-animate-left" src="images/fulls/06.webp" style="width:100%">
-          <!-- Buttons -->
-          <div class="w3-display-middle w3-display-container" style="width:100%">
-            <div class="fa fa-chevron-left fa-3x w3-display-left w3-text-white w3-margin-left" onclick="plusDivs(-1)"></div>
-            <div class="fa fa-chevron-right fa-3x w3-display-right w3-text-white w3-margin-right" onclick="plusDivs(1)"></div>
-          </div>
+      <div class="w3-card-2 card w3-display-middle">
+        <div class="w3-container w3-blue">
+          <h3>Stephen DuVall</h3>
         </div>
-            <!-- Captions -->
-          <div class="w3-container-bottom w3-panel w3-theme-l4 w3-card">
-            <p class="w3-opacity"><b>&copy; 2016 Stephen DuVall, All Rights Reserved.</b></p>
+
+        <div class="w3-container w3-white">
+          <p>I am a student in highschool currently following a career path in Mechatronics Engineering. (Robotics)</p>
+          <P>I bought a camera on my birthday and have been messing around with photography ever sense.</p>
+        </div>
+
+        <div class="w3-container w3-blue w3-padding-16"><img src="images\20160618_133309.jpg" style="width:100%;max-width:500px;"></div>
+
+      </div><!-- Close card-->
+    </div><!-- Close section 1 -->
+
+    <!-- Second parallax section -->
+    <div class="parallax w3-padding-32 w3-center w3-display-container" id="par2">
+
+      <div class="w3-card-4 w3-display-middle card">
+        <div class="w3-container w3-teal">
+          <h3>Photography</h3>
+        </div>
+
+        <div class="w3-container w3-white w3-padding-12">
+          <p>All photographs shown are taken by me from different places I have traveled</p>
+          <p>I have taken photos for multiple occasions as well,</p>
+          <ul class="w3-ul" style="width:100%;">
+            <li>Senior pictures</li>
+            <li>Graduation pictures</li>
+            <li>Homecoming pictures</li>
+            <li>Sporting events</li>
+          </ul>
+        </div>
+
+        <div class="w3-container w3-teal w3-padding"></div>
+
+      </div><!-- Close card -->
+    </div><!-- Close section 2 -->
+
+    <!-- Third section -->
+    <div class="parallax w3-padding-32 w3-center w3-display-container" id="par3">
+
+        <div class="w3-card-4 w3-display-middle card">
+          <div class="w3-container w3-grey">
+            <h3>Contact</h3>
           </div>
-      </div>
-    </div>
 
-    <!-- Google Analytics -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          <div class="w3-container w3-white w3-padding-16">
+            <ul class="w3-ul w3-theme-grey">
+              <li><i class="fa fa-phone aria-hidden="true></i> 404-710-5366</li>
+              <li><i class="fa fa-envelope" aria-hidden="true"></i>stephen.duvall13@gmail.com</li>
+            </ul>
+          </div>
+          <div class="w3-grey w3-padding"></div>
 
-      ga('create', 'UA-78698393-3', 'auto');
-      ga('send', 'pageview');
-    </script>
+        </div><!-- Close card -->
+    </div><!-- Close section 3 -->
 
-    <!-- Slide Show script -->
-    <script>
-      var slideIndex = 1;
-      showDivs(slideIndex);
-
-      function plusDivs(n) {
-        showDivs(slideIndex += n);
-      }
-
-      function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        x[slideIndex-1].style.display = "block";
-      }
-      </script>
-    </body>
+  </body>
 </html>
